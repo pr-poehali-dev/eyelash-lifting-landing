@@ -614,17 +614,6 @@ function FAQ() {
 
 function Contact() {
   const { ref, inView } = useInView(0.1);
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  const [consent, setConsent] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!consent) return;
-    setSubmitted(true);
-  };
 
   return (
     <section id="contact" className="py-24 relative" ref={ref}>
