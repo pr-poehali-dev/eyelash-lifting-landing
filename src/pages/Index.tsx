@@ -83,8 +83,8 @@ function Header() {
     <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${scrolled ? "glass-dark shadow-lg" : "bg-transparent"}`}>
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="font-display text-xl font-semibold">
-          <span className="text-gradient-gold">Anna</span>
-          <span className="text-[#F5EDD8] ml-1">Beauty</span>
+          <span className="text-gradient-gold">Анна</span>
+          <span className="text-[#F5EDD8] ml-1">Бьюти</span>
         </div>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
@@ -93,7 +93,7 @@ function Header() {
             </a>
           ))}
         </nav>
-        <a href="#contact" className="hidden md:inline-flex items-center gap-2 bg-gradient-gold text-[#0F0B0D] text-sm font-semibold px-5 py-2.5 rounded-xl hover:opacity-90 transition-all hover:scale-105">
+        <a href="https://wa.me/79189571274" target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center gap-2 bg-gradient-gold text-[#0F0B0D] text-sm font-semibold px-5 py-2.5 rounded-xl hover:opacity-90 transition-all hover:scale-105">
           <Icon name="Calendar" size={16} />
           Записаться
         </a>
@@ -130,7 +130,7 @@ function Hero() {
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-8 opacity-0 animate-fade-up" style={{ animationFillMode: "forwards" }}>
             <span className="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse" />
-            <span className="text-xs text-[#D4AF37] font-medium tracking-wider uppercase">Ростов-на-Дону · Принимаю записи</span>
+            <span className="text-xs text-[#D4AF37] font-medium tracking-wider uppercase">Ростов-на-Дону · Запись открыта</span>
           </div>
 
           <h1 className="font-display text-5xl md:text-7xl font-light leading-[1.05] mb-6 opacity-0 animate-fade-up animate-delay-100" style={{ animationFillMode: "forwards" }}>
@@ -144,7 +144,7 @@ function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-up animate-delay-300" style={{ animationFillMode: "forwards" }}>
-            <a href="#contact" className="inline-flex items-center justify-center gap-2 bg-gradient-gold text-[#0F0B0D] font-semibold px-8 py-4 rounded-2xl hover:opacity-90 transition-all hover:scale-105 glow-gold text-base">
+            <a href="https://wa.me/79189571274?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C+%D1%85%D0%BE%D1%87%D1%83+%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-gradient-gold text-[#0F0B0D] font-semibold px-8 py-4 rounded-2xl hover:opacity-90 transition-all hover:scale-105 glow-gold text-base">
               <Icon name="Sparkles" size={20} />
               Записаться онлайн
             </a>
@@ -170,7 +170,7 @@ function Hero() {
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
-        <span className="text-xs text-[#8a7a6a] tracking-widest uppercase">Scroll</span>
+        <span className="text-xs text-[#8a7a6a] tracking-widest uppercase">Листай</span>
         <div className="w-px h-8 bg-gradient-to-b from-[#D4AF37] to-transparent" />
       </div>
     </section>
@@ -251,7 +251,7 @@ function Services() {
               <p className="text-sm text-[#8a7a6a] leading-relaxed mb-4">{s.desc}</p>
               <div className="flex items-center justify-between">
                 <span className="text-[#D4AF37] font-semibold">{s.price}</span>
-                <a href="#contact" className="text-xs text-[#8a7a6a] hover:text-[#D4AF37] transition-colors flex items-center gap-1">
+                <a href="https://wa.me/79189571274" target="_blank" rel="noopener noreferrer" className="text-xs text-[#8a7a6a] hover:text-[#D4AF37] transition-colors flex items-center gap-1">
                   Записаться <Icon name="ArrowRight" size={12} />
                 </a>
               </div>
@@ -336,7 +336,7 @@ function Cases() {
               ))}
             </div>
             <div className="text-center mt-8">
-              <a href="#contact" className="inline-flex items-center gap-2 bg-gradient-gold text-[#0F0B0D] font-semibold px-6 py-3 rounded-xl hover:opacity-90 transition-all hover:scale-105 text-sm">
+              <a href="https://wa.me/79189571274?text=%D0%A5%D0%BE%D1%87%D1%83+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%B6%D0%B5+%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gradient-gold text-[#0F0B0D] font-semibold px-6 py-3 rounded-xl hover:opacity-90 transition-all hover:scale-105 text-sm">
                 <Icon name="Sparkles" size={16} />
                 Хочу такой же результат
               </a>
@@ -362,10 +362,6 @@ function Calculator() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
   const [showForm, setShowForm] = useState(false);
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [consent, setConsent] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
 
   const questions = [
     { q: "Какой повод вас привёл?", options: ["Свадьба / торжество", "Ежедневный уход", "Хочу изменить образ", "Подарок себе"] },
@@ -389,15 +385,8 @@ function Calculator() {
     else setShowForm(true);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!consent) return;
-    setSubmitted(true);
-  };
-
   const reset = () => {
     setStep(0); setAnswers([]); setShowForm(false);
-    setSubmitted(false); setName(""); setPhone(""); setConsent(false);
   };
 
   return (
@@ -442,38 +431,30 @@ function Calculator() {
                   <div className="text-[#D4AF37] font-semibold mb-2">{result().price}</div>
                   <p className="text-xs text-[#8a7a6a]">{result().tip}</p>
                 </div>
-                <h3 className="font-display text-xl font-semibold text-[#F5EDD8] mb-5">Записаться на приём</h3>
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                  <input value={name} onChange={e => setName(e.target.value)} required
-                    placeholder="Ваше имя" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-[#F5EDD8] placeholder-[#8a7a6a] text-sm focus:outline-none focus:border-[#D4AF37]/50" />
-                  <input value={phone} onChange={e => setPhone(e.target.value)} required type="tel"
-                    placeholder="+7 (___) ___-__-__"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-[#F5EDD8] placeholder-[#8a7a6a] text-sm focus:outline-none focus:border-[#D4AF37]/50" />
-                  <label className="flex items-start gap-3 cursor-pointer">
-                    <input type="checkbox" checked={consent} onChange={e => setConsent(e.target.checked)} className="mt-0.5 accent-[#D4AF37]" />
-                    <span className="text-xs text-[#8a7a6a] leading-relaxed">
-                      Я даю согласие на обработку персональных данных согласно <a href="#privacy" className="text-[#D4AF37] underline">Политике конфиденциальности</a>
-                    </span>
-                  </label>
-                  <button type="submit" disabled={!consent}
-                    className="w-full bg-gradient-gold text-[#0F0B0D] font-semibold py-3.5 rounded-xl hover:opacity-90 transition-all disabled:opacity-40 disabled:cursor-not-allowed">
-                    Получить запись
-                  </button>
-                </form>
-                <button onClick={reset} className="w-full text-center text-xs text-[#8a7a6a] hover:text-[#D4AF37] transition-colors mt-3">
+                <h3 className="font-display text-xl font-semibold text-[#F5EDD8] mb-2">Записаться на приём</h3>
+                <p className="text-xs text-[#8a7a6a] mb-5">Выберите удобный способ связи</p>
+                <div className="flex flex-col gap-3">
+                  <a href={`https://wa.me/79189571274?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C+%D1%85%D0%BE%D1%87%D1%83+%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F+%D0%BD%D0%B0+${encodeURIComponent(result().service)}`}
+                    target="_blank" rel="noopener noreferrer"
+                    className="flex items-center gap-3 bg-[#25D366]/15 border border-[#25D366]/30 rounded-xl px-5 py-3.5 hover:bg-[#25D366]/25 transition-all">
+                    <Icon name="MessageCircle" size={18} className="text-[#25D366]" />
+                    <span className="text-[#F5EDD8] font-medium text-sm">Написать в WhatsApp</span>
+                    <Icon name="ArrowRight" size={16} className="text-[#25D366] ml-auto" />
+                  </a>
+                  <a href="https://t.me/anutka_1_7" target="_blank" rel="noopener noreferrer"
+                    className="flex items-center gap-3 bg-[#229ED9]/15 border border-[#229ED9]/30 rounded-xl px-5 py-3.5 hover:bg-[#229ED9]/25 transition-all">
+                    <Icon name="Send" size={18} className="text-[#229ED9]" />
+                    <span className="text-[#F5EDD8] font-medium text-sm">Написать в Telegram</span>
+                    <Icon name="ArrowRight" size={16} className="text-[#229ED9] ml-auto" />
+                  </a>
+                </div>
+                <button onClick={reset} className="w-full text-center text-xs text-[#8a7a6a] hover:text-[#D4AF37] transition-colors mt-4">
                   Пройти заново
                 </button>
               </>
             )}
 
-            {submitted && (
-              <div className="text-center py-8">
-                <div className="text-5xl mb-4">🌟</div>
-                <h3 className="font-display text-2xl font-semibold text-[#D4AF37] mb-2">Отлично, {name}!</h3>
-                <p className="text-[#c4b89a] text-sm leading-relaxed">Свяжусь с вами в ближайшее время для подтверждения записи.</p>
-                <button onClick={reset} className="mt-6 text-xs text-[#8a7a6a] hover:text-[#D4AF37] transition-colors">Начать заново</button>
-              </div>
-            )}
+
           </div>
         </div>
       </div>
@@ -528,10 +509,14 @@ function About() {
                 </div>
               ))}
             </div>
-            <div className="mt-8">
-              <a href="#contact" className="inline-flex items-center gap-2 bg-gradient-gold text-[#0F0B0D] font-semibold px-6 py-3 rounded-xl hover:opacity-90 transition-all hover:scale-105 text-sm">
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="https://wa.me/79189571274" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gradient-gold text-[#0F0B0D] font-semibold px-6 py-3 rounded-xl hover:opacity-90 transition-all hover:scale-105 text-sm">
                 <Icon name="MessageCircle" size={16} />
-                Написать мне
+                WhatsApp
+              </a>
+              <a href="https://t.me/anutka_1_7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 glass text-[#F5EDD8] font-semibold px-6 py-3 rounded-xl hover:border-[#D4AF37]/40 transition-all text-sm">
+                <Icon name="Send" size={16} />
+                Telegram
               </a>
             </div>
           </div>
@@ -653,9 +638,10 @@ function Contact() {
             <p className="text-[#c4b89a] leading-relaxed mb-10">Оставьте заявку — отвечу в течение 15 минут и подберём удобное время</p>
             <div className="space-y-6">
               {[
-                { icon: "MapPin", label: "Адрес", value: "Ростов-на-Дону", sub: "Адрес уточняется при записи" },
+                { icon: "MapPin", label: "Адрес", value: "Ростов-на-Дону", sub: "Точный адрес — при записи" },
                 { icon: "Clock", label: "Часы работы", value: "Пн–Сб: 10:00–20:00", sub: "Вс: по договорённости" },
-                { icon: "MessageCircle", label: "Мессенджеры", value: "WhatsApp, Telegram", sub: "Ответ в течение 15 минут" },
+                { icon: "Phone", label: "Телефон", value: "+7 918 957-12-74", sub: "Звонки и WhatsApp" },
+                { icon: "Send", label: "Telegram", value: "@anutka_1_7", sub: "Ответ в течение 15 минут" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl bg-[#D4AF37]/10 flex items-center justify-center flex-shrink-0">
@@ -669,41 +655,65 @@ function Contact() {
                 </div>
               ))}
             </div>
+            <div className="mt-6 glass rounded-2xl p-4 border border-[#C9607A]/20">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-2 h-2 rounded-full bg-[#C9607A] animate-pulse" />
+                <span className="text-xs text-[#C9607A] font-semibold uppercase tracking-widest">Горячее предложение</span>
+              </div>
+              <p className="text-sm text-[#F5EDD8]">При записи через сайт — <span className="text-[#D4AF37] font-semibold">скидка 10%</span> на первую процедуру</p>
+            </div>
           </div>
 
           <div className={`transition-all duration-700 delay-200 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div className="glass rounded-3xl p-8">
-              {!submitted ? (
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                  <h3 className="font-display text-2xl font-semibold text-[#F5EDD8] mb-2">Оставить заявку</h3>
-                  <input value={name} onChange={e => setName(e.target.value)} required
-                    placeholder="Ваше имя"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-[#F5EDD8] placeholder-[#8a7a6a] text-sm focus:outline-none focus:border-[#D4AF37]/50 transition-colors" />
-                  <input value={phone} onChange={e => setPhone(e.target.value)} required type="tel"
-                    placeholder="+7 (___) ___-__-__"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-[#F5EDD8] placeholder-[#8a7a6a] text-sm focus:outline-none focus:border-[#D4AF37]/50 transition-colors" />
-                  <textarea value={message} onChange={e => setMessage(e.target.value)}
-                    placeholder="Какая услуга вас интересует? (необязательно)" rows={3}
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-[#F5EDD8] placeholder-[#8a7a6a] text-sm focus:outline-none focus:border-[#D4AF37]/50 transition-colors resize-none" />
-                  <label className="flex items-start gap-3 cursor-pointer mt-1">
-                    <input type="checkbox" checked={consent} onChange={e => setConsent(e.target.checked)} className="mt-0.5 accent-[#D4AF37]" />
-                    <span className="text-xs text-[#8a7a6a] leading-relaxed">
-                      Я даю согласие на обработку персональных данных согласно{" "}
-                      <a href="#privacy" className="text-[#D4AF37] underline">Политике конфиденциальности</a>
-                    </span>
-                  </label>
-                  <button type="submit" disabled={!consent}
-                    className="w-full bg-gradient-rose text-white font-semibold py-4 rounded-xl hover:opacity-90 transition-all disabled:opacity-40 disabled:cursor-not-allowed hover:scale-[1.01] glow-rose">
-                    Записаться на приём
-                  </button>
-                </form>
-              ) : (
-                <div className="text-center py-10">
-                  <div className="text-5xl mb-4">💫</div>
-                  <h3 className="font-display text-2xl font-semibold text-[#D4AF37] mb-2">Заявка принята!</h3>
-                  <p className="text-[#c4b89a] text-sm">Свяжусь с вами в течение 15 минут для подтверждения записи.</p>
+              <h3 className="font-display text-2xl font-semibold text-[#F5EDD8] mb-2">Выберите удобный способ</h3>
+              <p className="text-sm text-[#8a7a6a] mb-8">Напишите мне прямо сейчас — отвечу за 15 минут и подберём время</p>
+
+              <div className="flex flex-col gap-4 mb-8">
+                <a href="https://wa.me/79189571274?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C+%D1%85%D0%BE%D1%87%D1%83+%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F" target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-4 bg-[#25D366]/10 border border-[#25D366]/30 rounded-2xl px-6 py-4 hover:bg-[#25D366]/20 hover:border-[#25D366]/50 transition-all group">
+                  <div className="w-12 h-12 rounded-xl bg-[#25D366] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <Icon name="MessageCircle" size={22} className="text-white" />
+                  </div>
+                  <div>
+                    <div className="text-[#F5EDD8] font-semibold">WhatsApp</div>
+                    <div className="text-xs text-[#8a7a6a]">+7 918 957-12-74</div>
+                  </div>
+                  <Icon name="ArrowRight" size={18} className="text-[#25D366] ml-auto" />
+                </a>
+
+                <a href="https://t.me/anutka_1_7" target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-4 bg-[#229ED9]/10 border border-[#229ED9]/30 rounded-2xl px-6 py-4 hover:bg-[#229ED9]/20 hover:border-[#229ED9]/50 transition-all group">
+                  <div className="w-12 h-12 rounded-xl bg-[#229ED9] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <Icon name="Send" size={22} className="text-white" />
+                  </div>
+                  <div>
+                    <div className="text-[#F5EDD8] font-semibold">Telegram</div>
+                    <div className="text-xs text-[#8a7a6a]">@anutka_1_7</div>
+                  </div>
+                  <Icon name="ArrowRight" size={18} className="text-[#229ED9] ml-auto" />
+                </a>
+
+                <a href="tel:+79189571274"
+                  className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl px-6 py-4 hover:bg-white/10 hover:border-[#D4AF37]/30 transition-all group">
+                  <div className="w-12 h-12 rounded-xl bg-[#D4AF37]/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <Icon name="Phone" size={22} className="text-[#D4AF37]" />
+                  </div>
+                  <div>
+                    <div className="text-[#F5EDD8] font-semibold">Позвонить</div>
+                    <div className="text-xs text-[#8a7a6a]">+7 918 957-12-74</div>
+                  </div>
+                  <Icon name="ArrowRight" size={18} className="text-[#D4AF37] ml-auto" />
+                </a>
+              </div>
+
+              <div className="bg-[#D4AF37]/5 border border-[#D4AF37]/15 rounded-2xl p-4 text-center">
+                <p className="text-xs text-[#8a7a6a]">500+ клиенток уже доверились Анне</p>
+                <div className="flex justify-center gap-0.5 mt-1">
+                  {[1,2,3,4,5].map(i => <span key={i} className="text-[#D4AF37] text-sm">★</span>)}
                 </div>
-              )}
+                <p className="text-xs text-[#D4AF37] font-semibold mt-0.5">Рейтинг 4.9 на Яндекс Картах</p>
+              </div>
             </div>
           </div>
         </div>
@@ -738,8 +748,8 @@ function Footer() {
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           <div>
             <div className="font-display text-2xl font-semibold mb-3">
-              <span className="text-gradient-gold">Anna</span>
-              <span className="text-[#F5EDD8] ml-1">Beauty</span>
+              <span className="text-gradient-gold">Анна</span>
+              <span className="text-[#F5EDD8] ml-1">Бьюти</span>
             </div>
             <p className="text-xs text-[#8a7a6a] leading-relaxed max-w-xs">
               Профессиональный бровист и визажист в Ростове-на-Дону. Ваша красота — моя работа.
@@ -754,10 +764,24 @@ function Footer() {
             </div>
           </div>
           <div>
-            <div className="text-xs text-[#8a7a6a] tracking-widest uppercase mb-4">Правовая информация</div>
-            <div className="space-y-2">
-              <a href="#privacy" className="block text-sm text-[#c4b89a] hover:text-[#D4AF37] transition-colors">Политика конфиденциальности</a>
-              <a href="#privacy" className="block text-sm text-[#c4b89a] hover:text-[#D4AF37] transition-colors">Согласие на обработку ПДн</a>
+            <div className="text-xs text-[#8a7a6a] tracking-widest uppercase mb-4">Контакты</div>
+            <div className="space-y-3">
+              <a href="tel:+79189571274" className="flex items-center gap-2 text-sm text-[#c4b89a] hover:text-[#D4AF37] transition-colors">
+                <Icon name="Phone" size={14} className="text-[#D4AF37]" />
+                +7 918 957-12-74
+              </a>
+              <a href="https://wa.me/79189571274" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[#c4b89a] hover:text-[#D4AF37] transition-colors">
+                <Icon name="MessageCircle" size={14} className="text-[#D4AF37]" />
+                WhatsApp
+              </a>
+              <a href="https://t.me/anutka_1_7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[#c4b89a] hover:text-[#D4AF37] transition-colors">
+                <Icon name="Send" size={14} className="text-[#D4AF37]" />
+                @anutka_1_7
+              </a>
+              <a href="#privacy" className="flex items-center gap-2 text-sm text-[#c4b89a] hover:text-[#D4AF37] transition-colors">
+                <Icon name="FileText" size={14} className="text-[#D4AF37]" />
+                Политика конфиденциальности
+              </a>
             </div>
           </div>
         </div>
