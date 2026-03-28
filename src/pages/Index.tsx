@@ -403,7 +403,7 @@ function Calculator() {
 
         <div className={`max-w-xl mx-auto transition-all duration-700 delay-200 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <div className="glass rounded-3xl p-8 md:p-10">
-            {!showForm && !submitted && (
+            {!showForm && (
               <>
                 <div className="flex gap-2 mb-8">
                   {questions.map((_, i) => (
