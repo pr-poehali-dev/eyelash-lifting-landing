@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const HERO_IMAGE = "https://cdn.poehali.dev/projects/c0acc915-0e9f-4049-ab0a-4182d48e0214/files/03d47b44-17ee-42d4-a2c0-5ecfadc86850.jpg";
+const HERO_IMAGE = "https://cdn4.telesco.pe/file/nq2qL-2YS_DkKdRtZ_a2_s3vQ8nps2QOmTQXC-g0mQQuOFlu5wU211QnI5VZTOmjg8IpIDc6AoaWdlOTh0rBQerkU8Fp0P7Wdd2q8cyvPqCbhNJlUX1MpWAe2IKt7xOD8kF08Q4t6E9QB7vrFo4znyJbXRJphslca_zXCw0uhC_h7v08dOR-tIo6sWVPUt8oD4UlKFiZ9Y-Y35q1cr06buqF2i_Ig4ptTDlDblBWwkHvPTGHs42-VdLNmQrnfjtM55g3QS1C_o3PmUd9GXfjBiH9JaY-X6DT6IeWCvZO8DjcNNkVCGbKFvv6TR6FcXy-NcYeD6vEinNfVxUdNcf3ag.jpg";
 const BROW_IMAGE = "https://cdn.poehali.dev/projects/c0acc915-0e9f-4049-ab0a-4182d48e0214/files/26ae7a9e-7269-4bf8-96f0-882932d5b501.jpg";
 const TOOLS_IMAGE = "https://cdn.poehali.dev/projects/c0acc915-0e9f-4049-ab0a-4182d48e0214/files/9ac1edfb-1f90-4058-beaa-e92eb5cac7ba.jpg";
 
