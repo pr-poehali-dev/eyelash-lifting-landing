@@ -133,13 +133,13 @@ function Hero() {
             <span className="text-xs text-[#D4AF37] font-medium tracking-wider uppercase">Ростов-на-Дону · Запись открыта</span>
           </div>
 
-          <h1 className="font-display text-5xl md:text-7xl font-light leading-[1.05] mb-6 opacity-0 animate-fade-up animate-delay-100" style={{ animationFillMode: "forwards" }}>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-light leading-[1.05] mb-6 opacity-0 animate-fade-up animate-delay-100" style={{ animationFillMode: "forwards" }}>
             Бровист<br />
             <span className="text-gradient-main font-semibold italic">& Визажист</span><br />
             <span className="text-[#F5EDD8]">Анна</span>
           </h1>
 
-          <p className="text-lg text-[#c4b89a] leading-relaxed mb-10 max-w-lg opacity-0 animate-fade-up animate-delay-200" style={{ animationFillMode: "forwards" }}>
+          <p className="text-base sm:text-lg text-[#c4b89a] leading-relaxed mb-10 max-w-lg opacity-0 animate-fade-up animate-delay-200" style={{ animationFillMode: "forwards" }}>
             Подчёркиваю природную красоту бровей и создаю образы, которые хочется повторять снова и снова. Более 5 лет опыта, сотни счастливых клиенток.
           </p>
 
@@ -154,14 +154,14 @@ function Hero() {
             </a>
           </div>
 
-          <div className="flex gap-8 mt-14 opacity-0 animate-fade-up animate-delay-400" style={{ animationFillMode: "forwards" }}>
+          <div className="flex gap-6 sm:gap-8 mt-10 sm:mt-14 opacity-0 animate-fade-up animate-delay-400" style={{ animationFillMode: "forwards" }}>
             {[
               { value: "500+", label: "клиенток" },
               { value: "5 лет", label: "опыта" },
               { value: "4.9 ★", label: "рейтинг" },
             ].map((s) => (
               <div key={s.label}>
-                <div className="font-display text-2xl font-semibold text-[#D4AF37]">{s.value}</div>
+                <div className="font-display text-xl sm:text-2xl font-semibold text-[#D4AF37]">{s.value}</div>
                 <div className="text-xs text-[#8a7a6a] mt-0.5">{s.label}</div>
               </div>
             ))}
@@ -190,7 +190,7 @@ function Stats() {
       <div className="section-divider absolute top-0 left-0 right-0" />
       <div className="section-divider absolute bottom-0 left-0 right-0" />
       <div className="relative z-10 max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {[
             { count: c1, suffix: "+", label: "довольных клиенток", icon: "Heart" },
             { count: c2, suffix: " лет", label: "профессионального опыта", icon: "Award" },
@@ -202,7 +202,7 @@ function Stats() {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-[#D4AF37]/10 mb-4">
                 <Icon name={s.icon} size={22} className="text-[#D4AF37]" />
               </div>
-              <div className="font-display text-4xl md:text-5xl font-semibold text-gradient-gold">
+              <div className="font-display text-3xl md:text-5xl font-semibold text-gradient-gold">
                 {s.count}{s.suffix}
               </div>
               <div className="text-sm text-[#8a7a6a] mt-2">{s.label}</div>
@@ -230,7 +230,7 @@ function Services() {
       <div className="max-w-6xl mx-auto px-6">
         <div className={`text-center mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <span className="text-xs text-[#D4AF37] tracking-[0.3em] uppercase mb-4 block">Услуги</span>
-          <h2 className="font-display text-4xl md:text-5xl font-light mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light mb-4">
             Что я <span className="text-gradient-gold italic font-semibold">предлагаю</span>
           </h2>
           <p className="text-[#8a7a6a] max-w-md mx-auto">Каждая процедура — это внимание к деталям и результат, который вам понравится</p>
@@ -304,7 +304,7 @@ function Cases() {
       <div className="max-w-6xl mx-auto px-6">
         <div className={`text-center mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <span className="text-xs text-[#C9607A] tracking-[0.3em] uppercase mb-4 block">Кейсы</span>
-          <h2 className="font-display text-4xl md:text-5xl font-light mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light mb-4">
             Реальные <span className="text-gradient-rose italic font-semibold">результаты</span>
           </h2>
         </div>
@@ -319,8 +319,8 @@ function Cases() {
             ))}
           </div>
 
-          <div className="glass rounded-3xl p-8 md:p-12 max-w-3xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-6">
+          <div className="glass rounded-3xl p-6 sm:p-8 md:p-12 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {[
                 { label: "Задача", text: cases[active].problem, color: "text-[#8a7a6a]", icon: "HelpCircle" },
                 { label: "Решение", text: cases[active].solution, color: "text-[#D4AF37]", icon: "Lightbulb" },
@@ -423,7 +423,7 @@ function Calculator() {
               </>
             )}
 
-            {showForm && !submitted && (
+            {showForm && (
               <>
                 <div className="bg-[#D4AF37]/10 border border-[#D4AF37]/20 rounded-2xl p-5 mb-6">
                   <div className="text-xs text-[#D4AF37] tracking-widest uppercase mb-2">Ваша рекомендация</div>
@@ -475,11 +475,11 @@ function About() {
     <section id="about" className="py-24 relative bg-[#0A080A]" ref={ref}>
       <div className="section-divider absolute top-0 left-0 right-0" />
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div className={`relative transition-all duration-1000 ${inView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"}`}>
             <div className="relative">
               <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-[#D4AF37]/20 to-[#C9607A]/20 blur-xl" />
-              <img src={HERO_IMAGE} alt="Анна — бровист визажист" className="relative z-10 w-full aspect-[3/4] object-cover object-top rounded-3xl" />
+              <img src={HERO_IMAGE} alt="Анна — бровист визажист" className="relative z-10 w-full aspect-[4/5] sm:aspect-[3/4] object-cover object-top rounded-3xl" />
               <div className="absolute bottom-6 -right-4 z-20 glass rounded-2xl p-4 shadow-xl">
                 <div className="text-[#D4AF37] font-display text-2xl font-bold">5+</div>
                 <div className="text-xs text-[#8a7a6a]">лет опыта</div>
@@ -489,7 +489,7 @@ function About() {
 
           <div className={`transition-all duration-1000 delay-200 ${inView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"}`}>
             <span className="text-xs text-[#D4AF37] tracking-[0.3em] uppercase mb-4 block">Обо мне</span>
-            <h2 className="font-display text-4xl md:text-5xl font-light mb-6">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light mb-6">
               Привет, я <span className="text-gradient-gold italic font-semibold">Анна</span>
             </h2>
             <p className="text-[#c4b89a] leading-relaxed mb-4">
@@ -540,7 +540,7 @@ function Reviews() {
       <div className="max-w-6xl mx-auto px-6">
         <div className={`text-center mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <span className="text-xs text-[#C9607A] tracking-[0.3em] uppercase mb-4 block">Отзывы</span>
-          <h2 className="font-display text-4xl md:text-5xl font-light mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light mb-4">
             Что говорят <span className="text-gradient-rose italic font-semibold">клиентки</span>
           </h2>
           <div className="flex items-center justify-center gap-2 mt-4">
@@ -589,7 +589,7 @@ function FAQ() {
       <div className="max-w-4xl mx-auto px-6">
         <div className={`text-center mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <span className="text-xs text-[#D4AF37] tracking-[0.3em] uppercase mb-4 block">FAQ</span>
-          <h2 className="font-display text-4xl md:text-5xl font-light mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light mb-4">
             Частые <span className="text-gradient-gold italic font-semibold">вопросы</span>
           </h2>
         </div>
@@ -618,10 +618,10 @@ function Contact() {
   return (
     <section id="contact" className="py-24 relative" ref={ref}>
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
           <div className={`transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <span className="text-xs text-[#C9607A] tracking-[0.3em] uppercase mb-4 block">Запись</span>
-            <h2 className="font-display text-4xl md:text-5xl font-light mb-6">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light mb-6">
               Записаться <span className="text-gradient-rose italic font-semibold">онлайн</span>
             </h2>
             <p className="text-[#c4b89a] leading-relaxed mb-10">Оставьте заявку — отвечу в течение 15 минут и подберём удобное время</p>
@@ -800,6 +800,16 @@ const Index = () => {
       <Contact />
       <PrivacySection />
       <Footer />
+      {/* Плавающая кнопка WhatsApp на мобиле */}
+      <a
+        href="https://wa.me/79189571274?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C+%D1%85%D0%BE%D1%87%D1%83+%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F"
+        target="_blank" rel="noopener noreferrer"
+        className="fixed bottom-6 right-4 z-50 md:hidden flex items-center gap-2 bg-[#25D366] text-white font-semibold px-4 py-3 rounded-2xl shadow-2xl hover:bg-[#1ebe5c] transition-all active:scale-95"
+        style={{ boxShadow: "0 4px 24px rgba(37,211,102,0.4)" }}
+      >
+        <Icon name="MessageCircle" size={20} />
+        <span className="text-sm">Записаться</span>
+      </a>
     </div>
   );
 };
