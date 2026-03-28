@@ -441,10 +441,10 @@ function Calculator() {
                     <span className="text-[#F5EDD8] font-medium text-sm">Написать в WhatsApp</span>
                     <Icon name="ArrowRight" size={16} className="text-[#25D366] ml-auto" />
                   </a>
-                  <a href="https://t.me/anutka_1_7" target="_blank" rel="noopener noreferrer"
+                  <a href="https://t.me/makeup_anuta" target="_blank" rel="noopener noreferrer"
                     className="flex items-center gap-3 bg-[#229ED9]/15 border border-[#229ED9]/30 rounded-xl px-5 py-3.5 hover:bg-[#229ED9]/25 transition-all">
                     <Icon name="Send" size={18} className="text-[#229ED9]" />
-                    <span className="text-[#F5EDD8] font-medium text-sm">Написать в Telegram</span>
+                    <span className="text-[#F5EDD8] font-medium text-sm">Telegram-канал</span>
                     <Icon name="ArrowRight" size={16} className="text-[#229ED9] ml-auto" />
                   </a>
                 </div>
@@ -514,7 +514,7 @@ function About() {
                 <Icon name="MessageCircle" size={16} />
                 WhatsApp
               </a>
-              <a href="https://t.me/anutka_1_7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 glass text-[#F5EDD8] font-semibold px-6 py-3 rounded-xl hover:border-[#D4AF37]/40 transition-all text-sm">
+              <a href="https://t.me/makeup_anuta" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 glass text-[#F5EDD8] font-semibold px-6 py-3 rounded-xl hover:border-[#D4AF37]/40 transition-all text-sm">
                 <Icon name="Send" size={16} />
                 Telegram
               </a>
@@ -641,7 +641,7 @@ function Contact() {
                 { icon: "MapPin", label: "Адрес", value: "Ростов-на-Дону", sub: "Точный адрес — при записи" },
                 { icon: "Clock", label: "Часы работы", value: "Пн–Сб: 10:00–20:00", sub: "Вс: по договорённости" },
                 { icon: "Phone", label: "Телефон", value: "+7 918 957-12-74", sub: "Звонки и WhatsApp" },
-                { icon: "Send", label: "Telegram", value: "@anutka_1_7", sub: "Ответ в течение 15 минут" },
+                { icon: "Send", label: "Telegram-канал", value: "@makeup_anuta", sub: "Работы, акции, новости" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl bg-[#D4AF37]/10 flex items-center justify-center flex-shrink-0">
@@ -682,14 +682,14 @@ function Contact() {
                   <Icon name="ArrowRight" size={18} className="text-[#25D366] ml-auto" />
                 </a>
 
-                <a href="https://t.me/anutka_1_7" target="_blank" rel="noopener noreferrer"
+                <a href="https://t.me/makeup_anuta" target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-4 bg-[#229ED9]/10 border border-[#229ED9]/30 rounded-2xl px-6 py-4 hover:bg-[#229ED9]/20 hover:border-[#229ED9]/50 transition-all group">
                   <div className="w-12 h-12 rounded-xl bg-[#229ED9] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                     <Icon name="Send" size={22} className="text-white" />
                   </div>
                   <div>
-                    <div className="text-[#F5EDD8] font-semibold">Telegram</div>
-                    <div className="text-xs text-[#8a7a6a]">@anutka_1_7</div>
+                    <div className="text-[#F5EDD8] font-semibold">Telegram-канал</div>
+                    <div className="text-xs text-[#8a7a6a]">@makeup_anuta</div>
                   </div>
                   <Icon name="ArrowRight" size={18} className="text-[#229ED9] ml-auto" />
                 </a>
@@ -774,9 +774,9 @@ function Footer() {
                 <Icon name="MessageCircle" size={14} className="text-[#D4AF37]" />
                 WhatsApp
               </a>
-              <a href="https://t.me/anutka_1_7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[#c4b89a] hover:text-[#D4AF37] transition-colors">
+              <a href="https://t.me/makeup_anuta" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[#c4b89a] hover:text-[#D4AF37] transition-colors">
                 <Icon name="Send" size={14} className="text-[#D4AF37]" />
-                @anutka_1_7
+                @makeup_anuta
               </a>
               <a href="#privacy" className="flex items-center gap-2 text-sm text-[#c4b89a] hover:text-[#D4AF37] transition-colors">
                 <Icon name="FileText" size={14} className="text-[#D4AF37]" />
